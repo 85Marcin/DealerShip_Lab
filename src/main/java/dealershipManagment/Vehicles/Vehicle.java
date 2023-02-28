@@ -1,9 +1,10 @@
 package dealershipManagment.Vehicles;
+import dealershipManagment.Behaviours.ISell;
 import dealershipManagment.CarComponents.*;
 
 import java.awt.*;
 
-public abstract class Vehicle {
+public abstract class Vehicle implements ISell {
 
     private double price;
     private String color;
@@ -44,6 +45,6 @@ public abstract class Vehicle {
         this.engine = engine;
     }
 
-
+    public abstract double sell(Vehicle vehicle);
 
 }

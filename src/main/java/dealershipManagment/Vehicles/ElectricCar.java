@@ -5,4 +5,9 @@ public class ElectricCar extends Vehicle {
     public ElectricCar(double price, String color, Engine engine){
         super(price, color, engine);
     }
+
+    public double sell(Vehicle vehicle){
+        return vehicle.getCarPrice();
+
+    }
 }
